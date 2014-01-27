@@ -23,12 +23,12 @@ function D (cons, opts) {
     var self = this;
     if (!opts) opts = {};
     
-    if (opts.weak !== false && !opts.proto) {
+    if (opts.weak !== false) {
         if (!weak) {
             weak = require("weak")
         }
-        
-        opts.proto = {};
+
+        if (!opts.proto) opts.proto = {};
         opts.proto.wrap = function (cb, id) {
             var proto = this;
             return weak(cb, function () {
