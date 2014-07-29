@@ -12,7 +12,7 @@
     "url" : "http://github.com/substack/dnode.git"
   },
   "dependencies" : {
-    "dnode-protocol" : "git://github.com/EruditorGroup/dnode-protocol.git",
+    "dnode-protocol" : "git+ssh://git@github.com/EruditorGroup/dnode-protocol.git",
     "jsonify" : "~0.0.0"
   },
   "optionalDependencies": {
